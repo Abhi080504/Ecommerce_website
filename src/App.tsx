@@ -1,26 +1,26 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { Button, ThemeProvider } from '@mui/material';
+import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
+import Navbar from './Customer/components/Navbar/Navbar';
+import customTheme from './Theme/customTheme';
+import Home from './Customer/pages/Home/Home';
+import Product from './Customer/pages/Product/Product';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    
+      <ThemeProvider theme={customTheme}>
+
+      <div>
+        <Navbar/>
+       {/*<Home/>*/}
+       <Product/>*/
+      </div>
+
+      </ThemeProvider>
+    
   );
 }
-
 export default App;
