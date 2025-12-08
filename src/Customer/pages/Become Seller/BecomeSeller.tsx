@@ -14,7 +14,7 @@ const BecomeSeller = () => {
         <section className='lg:col-span-1 md:col-span-2 col-span-3 p-10 shadow-lg
         rounded-b-md'>
 
-            {! isLogin?<SellerAccountForm/>:<SellerLoginForm/>}
+            {! isLogin ?<SellerAccountForm/>:<SellerLoginForm/>}
 
             <div className='mt-10 space-y-2'>
                 <h1 className='text-center text-sm font-medium'>Have Account</h1>
