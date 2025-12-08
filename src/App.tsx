@@ -9,22 +9,24 @@ import Home from './Customer/pages/Home/Home';
 import Product from './Customer/pages/Product/Product';
 import ProductDetails from './Customer/pages/ProductDetails/ProductDetails';
 import Review from './Customer/pages/Review/Review';
+import Cart from './Customer/pages/cart/cart';
+import Checkout from './Customer/pages/checkout/checkout';
 
 function App() {
   return (
-    
-      <ThemeProvider theme={customTheme}>
-
+    <ThemeProvider theme={customTheme}>
       <div>
-        <Navbar/>
-       {/*<Home/>*/}
-       {/*<Product/>*/}
-       {/* <ProductDetails/> */}
-       <Review/>
-      </div>
+        <Navbar />
+        {/* <Home/> */}
+        {/* <Product/> */}
 
-      </ThemeProvider>
-    
+        {/* <ProductDetails/> */}
+        {/* <Review/> */}
+        {/* <Cart/> */}
+        <Checkout />
+      </div>
+    </ThemeProvider>
   );
 }
+
 export default App;
