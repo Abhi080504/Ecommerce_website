@@ -5,8 +5,7 @@ import AddProduct from '../Seller/pages/Products/AddProduct'
 import Orders from '../Seller/pages/Orders/Orders'
 import Profile from '../Seller/pages/Account/Profile'
 import Transaction from '../Seller/pages/Payment/Transaction'
-import { Payment } from '@mui/icons-material'
-
+import Payment from '../Seller/pages/Payment/Payment'
 const SellerRoutes = () => {
   return (
     <div>

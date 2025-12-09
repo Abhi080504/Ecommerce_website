@@ -12,6 +12,7 @@ import Review from './Customer/pages/Review/Review';
 import Account from './Customer/pages/Account/Account';
 import BecomeSeller from './Customer/pages/Become Seller/BecomeSeller';
 import SellerDashboard from './Seller/pages/SellerDashboard/SellerDashboard';
+import AdminDashboard from './admin/pages/dashboard/Dashboard';
 
 // His imports
 import Cart from './Customer/pages/cart/cart';
@@ -38,6 +39,7 @@ function App() {
           <Route path="/become-seller" element={<BecomeSeller />} />
           <Route path="/account/*" element={<Account />} />
           <Route path="/seller/*" element={<SellerDashboard />} />
+          <Route path="/admin/*" element={<AdminDashboard />} />
         </Routes>
       </div>
     </ThemeProvider>
