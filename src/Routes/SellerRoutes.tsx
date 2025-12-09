@@ -5,6 +5,7 @@ import AddProduct from '../Seller/pages/Products/AddProduct'
 import Orders from '../Seller/pages/Orders/Orders'
 import Profile from '../Seller/pages/Account/Profile'
 import Transaction from '../Seller/pages/Payment/Transaction'
+import { Payment } from '@mui/icons-material'
 
 const SellerRoutes = () => {
   return (
@@ -16,6 +17,7 @@ const SellerRoutes = () => {
         <Route path='/orders' element={<Orders/>}/>
         <Route path='/account' element={<Profile/>}/>
         <Route path='/transaction' element={<Transaction/>}/>
+        <Route path='/payment' element={<Payment/>}/>
       </Routes>
     </div>
   )
