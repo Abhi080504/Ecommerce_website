@@ -1,6 +1,6 @@
 import React from 'react'
 
-const react-app-env.d = () => {
+const Products = () => {
   return (
     <div>
       
@@ -8,4 +8,4 @@ const react-app-env.d = () => {
   )
 }
 
-export default react-app-env.d
+export default Products
