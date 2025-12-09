@@ -25,7 +25,7 @@ const Navbar = () => {
                     {!isLarge && <IconButton>
                         <MenuIcon/>
                     </IconButton>}
-                    <h1 onClick={()=>navigate("/")}className='logo cursor-popinter text-lg md:text-2xl text-primary-color'>
+                    <h1 onClick={()=>navigate("/")}className='logo cursor-pointer text-lg md:text-2xl text-primary-color'>
                         Ecommerce
                     </h1>
                 </div>
@@ -66,7 +66,7 @@ const Navbar = () => {
                 <FavoriteBorder sx={{fontSize:29}}/>
                </IconButton>
                 <IconButton>
-                <AddShoppingCart className='text-gray-700' sx={{fontSize:29}}/>
+                <AddShoppingCart onClick={()=>navigate("/cart")} className='text-gray-700' sx={{fontSize:29}}/>
                </IconButton>
               {isLarge && <Button onClick={()=>navigate("/Become-Seller")} startIcon={<Storefront/>} variant='outlined'>
                Become Seller
