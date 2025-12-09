@@ -11,7 +11,7 @@ import ProductDetails from './Customer/pages/ProductDetails/ProductDetails';
 import Review from './Customer/pages/Review/Review';
 import Account from './Customer/pages/Account/Account';
 import BecomeSeller from './Customer/pages/Become Seller/BecomeSeller';
-import SellerDashboard from './seller/pages/SellerDashboard/SellerDashboard';
+import SellerDashboard from './Seller/pages/SellerDashboard/SellerDashboard';
 
 // His imports
 import Cart from './Customer/pages/cart/cart';

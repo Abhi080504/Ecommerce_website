@@ -1,11 +1,1 @@
-import React from 'react'
-
-const react-app-env.d = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
-
-export default react-app-env.d
+/// <reference types="react-scripts" />

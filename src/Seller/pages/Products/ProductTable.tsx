@@ -24,19 +24,22 @@ const rows = [
   createData('Gingerbread', 356, 16.0, 49, 3.9),
 ];
 
-export default function OrderTable() {
+export default function ProductTable() {
   return (
     <TableContainer component={Paper}>
       <Table sx={{ minWidth: 650 }} aria-label="simple table">
         <TableHead>
-          <TableRow sx={{ backgroundColor: "black" }}>
-            <TableCell sx={{ color: "white" }} >Order ID</TableCell>
-            <TableCell sx={{ color: "white" }} align="right">Products</TableCell>
-            <TableCell sx={{ color: "white" }} align="right">Shipping Address</TableCell>
-            <TableCell sx={{ color: "white" }} align="right">Order Status</TableCell>
+        <TableRow sx={{ backgroundColor: "black" }}>
+            <TableCell sx={{ color: "white" }}>Images</TableCell>
+            <TableCell sx={{ color: "white" }} align="right">Title</TableCell>
+            <TableCell sx={{ color: "white" }} align="right">MRP</TableCell>
+            <TableCell sx={{ color: "white" }} align="right">Selling Price</TableCell>
+            <TableCell sx={{ color: "white" }} align="right">Color</TableCell>
+            <TableCell sx={{ color: "white" }} align="right">Update Stock</TableCell>
             <TableCell sx={{ color: "white" }} align="right">Update</TableCell>
-          </TableRow>
+        </TableRow>
         </TableHead>
+
         <TableBody>
           {rows.map((row) => (
             <TableRow
@@ -48,6 +51,8 @@ export default function OrderTable() {
               </TableCell>
               <TableCell align="right">{row.calories}</TableCell>
               <TableCell align="right">{row.fat}</TableCell>
+              <TableCell align="right">{row.carbs}</TableCell>
+              <TableCell align="right">{row.protein}</TableCell>
               <TableCell align="right">{row.carbs}</TableCell>
               <TableCell align="right">{row.protein}</TableCell>
             </TableRow>
