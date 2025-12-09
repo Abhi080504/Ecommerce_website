@@ -6,12 +6,15 @@ import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import { AddShoppingCart, Category, FavoriteBorder, Storefront } from '@mui/icons-material';
 import CategorySheet from './CategorySheet';
 import { mainCategory } from '../../../data/category/mainCategory';
+import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
     const  theme=useTheme()
     const isLarge=useMediaQuery(theme.breakpoints.up('lg'))
     const [selectedCategory,setSelectedCategory]=useState("men");
     const [showCategorySheet,setShowCategorySheet]=useState(false);
+    const navigate=useNavigate()
+
 
   return (
     <div>
@@ -22,7 +25,7 @@ const Navbar = () => {
                     {!isLarge && <IconButton>
                         <MenuIcon/>
                     </IconButton>}
-                    <h1 className='logo cursor-popinter text-lg md:text-2xl text-primary-color'>
+                    <h1 onClick={()=>navigate("/")}className='logo cursor-pointer text-lg md:text-2xl text-primary-color'>
                         Ecommerce
                     </h1>
                 </div>
@@ -50,11 +53,11 @@ const Navbar = () => {
                 </IconButton>
 
                 {
-                    false? <Button className='flex items-center gap-2'>
+                    true? <Button onClick={()=>navigate("/account/orders")}className='flex items-center gap-2'>
                         <Avatar
                         sx={{width:29,height:29}}/>
                         <h1 className='font-semibold hidden lg:block'>
-                            Zosh
+                            Username
                         </h1>
                         
                     </Button>:<Button variant='contained'>Login</Button>  
@@ -63,9 +66,9 @@ const Navbar = () => {
                 <FavoriteBorder sx={{fontSize:29}}/>
                </IconButton>
                 <IconButton>
-                <AddShoppingCart className='text-gray-700' sx={{fontSize:29}}/>
+                <AddShoppingCart onClick={()=>navigate("/cart")} className='text-gray-700' sx={{fontSize:29}}/>
                </IconButton>
-              {isLarge && <Button startIcon={<Storefront/>} variant='outlined'>
+              {isLarge && <Button onClick={()=>navigate("/Become-Seller")} startIcon={<Storefront/>} variant='outlined'>
                Become Seller
                </Button>} 
             </div>
