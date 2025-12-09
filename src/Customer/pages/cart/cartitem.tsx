@@ -12,7 +12,7 @@ const cartitem = () => {
     <div className='border rounded-md and relative'>
         <div className='p-5 flex gap-3'>
             <div>
-                <img className='w-[90ppx] rounded-md' src="https://i.pinimg.com/736x/1f/b2/ad/1fb2ad56c15be4b718c480852ae71320.jpg"
+                <img className='w-[90ppx] rounded-md' src="https://i.pinimg.com/736x/f8/8e/83/f88e837dfcb3415d1be6941c333e5aac.jpg"
                 alt='' />
             </div>
             <div className='space-y-2'>
