@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
-import { Button, ThemeProvider } from '@mui/material';
+import
+ { Button, ThemeProvider } from '@mui/material';
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 import Navbar from './Customer/components/Navbar/Navbar';
 import customTheme from './Theme/customTheme';
@@ -12,8 +13,7 @@ import Review from './Customer/pages/Review/Review';
 import Account from './Customer/pages/Account/Account';
 import BecomeSeller from './Customer/pages/Become Seller/BecomeSeller';
 import SellerDashboard from './Seller/pages/SellerDashboard/SellerDashboard';
-import AdminDashboard from './admin/pages/dashboard/Dashboard';
-
+import AdminDashboard from './Admin/pages/dashboard/Dashboard';
 // His imports
 import Cart from './Customer/pages/cart/cart';
 import Checkout from './Customer/pages/checkout/checkout';
