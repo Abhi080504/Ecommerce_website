@@ -23,8 +23,14 @@ const menu = [
   },
    {
     name:"Home Page",
-    path:"/admin/electronics-category",
+    path:"/admin/home-grid",
     icon:<Home className='text-primary-color' />,
+    activeIcon: <Home className='text-white' />,
+  },
+  {
+    name:"Electronics Category",
+    path:"/admin/electronics-category",
+    icon:<ElectricBolt className='text-primary-color' />,
     activeIcon: <Home className='text-white' />,
   },
    {

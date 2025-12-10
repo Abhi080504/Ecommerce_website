@@ -1,9 +1,40 @@
-import React from 'react'
+import React, { useState } from "react";
+import { Button } from "@mui/material";
+import DealTable from "./DealTable";
+import DealCategoryTable from "./DealCategoryTable";
+import CreateDealForm from "./CreateDealForm";
+
+const tabs = ["Deals", "Category", "Create Deal"];
 
 const Deal = () => {
-  return (
-    <div>Deal</div>
-  )
-}
+  const [activeTab, setActiveTab] = useState("Deals");
 
-export default Deal
+  return (
+    <div>
+      <div className="flex gap-4">
+        {tabs.map((item) => (
+          <Button
+            key={item}
+            onClick={() => setActiveTab(item)}
+            variant={activeTab === item ? "contained" : "outlined"}
+          >
+            {item}
+          </Button>
+        ))}
+      </div>
+      <div className="mt-5">
+        {activeTab == "Deals" ? (
+          <DealTable />
+        ) : activeTab == "Category" ? (
+          <DealCategoryTable />
+        ) : (
+          <div className="mt-5 flex flex-col justify-center items-center h-[70vh]">
+            <CreateDealForm />
+          </div>
+        )}
+      </div>
+    </div>
+  );
+};
+
+export default Deal;
